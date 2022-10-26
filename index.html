@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Lin</title>
+
+  <meta name="description" content="David Lin Personal Portfolio">
+  <meta name="keywords" content="Video Streaming, Ffmpeg, WebRTC, React, AWS">
+  <meta name="author" content="David Lin">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/my-avatar.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="David Lin" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="David Lin">David Lin</h1>
+
+          <p class="title">Video Streaming Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:david.lin.9422@gmail.com" class="contact-link">david.lin.9422@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+14109211274" class="contact-link">+1 (410) 921 1274</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">Feburary 2, 1994</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Severn, MD, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/devDavid1994" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://stackoverflow.com/users/20319065/david-lin" target="_blank" class="social-link">
+              <ion-icon name="logo-stackoverflow"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://linkedin.com/david-lin-streaming" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://medium.com/@david.lin.9422" target="_blank" class="social-link">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Well Studied Software and Video Streaming Engineer from Maryland, United State, working in Software Development and Media Company.
+            I enjoy
+            turning complex problems into simple, figuring out latency problem and providing solution related to video streaming.
+          </p>
+
+          <p>
+            My job is to build your video streaming system so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is well-working with well architcture and easy to use. My aim is to bring
+            across your
+            video and streaming in the most creative way. I am working for my video streaming experience for many famous brand companies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Analysis</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality video analysis at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Streaming</h4>
+
+                <p class="service-item-text">
+                  High-scalable video streaming system in the right way.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Encoding & Decoding</h4>
+
+                <p class="service-item-text">
+                  Professional video encoding and decoding system.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Apps Development</h4>
+
+                <p class="service-item-text">
+                  Professional SPA related video streaming with nice video player.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Jacob crothers" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jacob Crothers</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    David was hired to create video streaming system for the company product ADS system. He provided great solution to the team, worked with passionate mind. 
+                    David was able to understand all of the pieces very quickly. Within no time, he was creating a great video system for major features, I couldn't be more thankful to work with him. 
+                    <br/>
+                    Come to me for his reference at jacobcrothers425@gmail.com
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Bjoern Wedler" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Bjoern Wedler</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    David is an excellent developer. He completed a project in record time (i actually don't think he even slept) and the quality of his code is fantastic!
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Michelle Macro" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Michelle Macro</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Overall David Lin is a very hard worker, independent, and a very quick learner. I would recommend him for any position - I don't think there's a job in the software industry too difficult for him!
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jordan Davey" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jordan Davey</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    David is smart and a quick learner. He finishes tasks quick and clean. He is technically strong and has the ability to find resources to solve issues himself. I would recommend Theo to any serious software firms.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/client-1.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/client-2.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/client-3.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/client-4.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/client-5.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/client-6.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Hawaii at Manoa</h4>
+
+              <span>2011 — 2015</span>
+
+              <p class="timeline-text">
+                Barchelor of Science(B.S.), Computer Science
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of Hawaii</h4>
+
+              <span>2005 — 2011</span>
+
+              <p class="timeline-text">
+                Realize their individual goals and aspirations;
+                Possess the attitudes, knowledge, and skills necessary to contribute positively and compete in a global society;
+                Exercise the rights and responsibilities of citizenship; and
+                Pursue post-secondary education and/or careers without need for remediation.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Senior Software Engineer (VisionLab Gmbh)</h4>
+
+              <span>2020 — Sept 2022</span>
+
+              <p class="timeline-text">
+                - Video streaming with video filter(OpenGL, OpenCV) <br/>
+                - Video studio development <br/>
+                - Maintain streaming server(Wowza, Ant-Media, Kurento, Flussonic) <br/>
+                - Front application development 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer IV (Nielsen) - Live Streaming</h4>
+
+              <span>2018 — 2020</span>
+
+              <p class="timeline-text">
+                - Video codec encoding/decoding/transcoding <br/> 
+                - Gstreamer, WebRTC, OBS Studio <br/> 
+                - HLS, VOD, Mpeg Dash, RTMP, RTMPS, RTSP, SRT, VOIP, SIP, SDP <br/>
+                - Ffmpeg, C++, React, Video.js 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer II (Nielsen) - Video Streaming</h4>
+
+              <span>2016 — 2018</span>
+
+              <p class="timeline-text">
+                - Video analysis (AWS Kinesis) <br/>
+                - Video Encoding/Decoding (Ffmpeg) <br/>
+                - Ngnix RTMP server development & maintain <br/> 
+                - AWS streaming architcture <br/> 
+                - Front video player development <br/>                 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer (Vokal Media)</h4>
+
+              <span>2015 — 2016</span>
+
+              <p class="timeline-text">
+                C/C++ coding, video analysis, IPTV camera streaming
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Video Streaming</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Video Analysis</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Video Encoding Decoding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Front End Development</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Video Solution</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Streaming Servers</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Video Solution</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Streaming Servers</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="video solution">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="Decoding System" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Decoding System</h3>
+
+                <p class="project-category">Video Solution</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="video solution">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="Encoding Service System" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Encoding Service System</h3>
+
+                <p class="project-category">Video Solution</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="video solution">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="Encoding System" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Encoding System</h3>
+
+                <p class="project-category">Video Solution</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="video solution">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="IP Camera Management System" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IP Camera Management System</h3>
+
+                <p class="project-category">Video Solution</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="video solution">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="IPTV Streaming Service" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IPTV Streaming Service</h3>
+
+                <p class="project-category">Video Solution</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="video solution">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="GStreamer" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GStreamer</h3>
+
+                <p class="project-category">Video Solution</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="video solution">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="Virtual Cloud Remote Service" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Virtual Cloud Remote Service</h3>
+
+                <p class="project-category">Video Solution</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="streaming servers">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/server1.png" alt="Kurento Media Server" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Kurento Media Server</h3>
+
+                <p class="project-category">Streaming Servers</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="streaming servers">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/server2.png" alt="Kurento Connection" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Kurento Connection</h3>
+
+                <p class="project-category">Streaming Servers</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="streaming servers">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/server3.png" alt="Kurento Media Server" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Kurento Media Server</h3>
+
+                <p class="project-category">Streaming Servers</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="streaming servers">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/server4.png" alt="Kurento Media Element" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Kurento Media Element</h3>
+
+                <p class="project-category">Streaming Servers</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="streaming servers">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/server5.png" alt="Connection of Kurento Clients" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Connection of Kurento Clients</h3>
+
+                <p class="project-category">Streaming Servers</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="streaming servers">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/server6.png" alt="Kurento Server" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Kurento Server</h3>
+
+                <p class="project-category">Streaming Servers</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="streaming servers">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/server7.png" alt="WebRTC Media Server" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">WebRTC Media Server</h3>
+
+                <p class="project-category">Streaming Servers</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="streaming servers">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/server8.png" alt="WebRTC Benefits" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">WebRTC Benefits</h3>
+
+                <p class="project-category">Streaming Servers</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Picture1.jpg" alt="Streaming" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">React, HLS</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Picture4.jpg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">React, Video.JS</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Picture3.jpg" alt="Streaming" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">React, AWS Lambda, Transcoder</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Picture2.jpg" alt="Streaming" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AWS IVS</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Picture5.png" alt="Streaming" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">VOD Player</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Picture6.png" alt="Streaming" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Video Encoding, Decoding</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Picture7.png" alt="Streaming" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Re-Streaming</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Picture8.png" alt="Streaming" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Streaming</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@david.lin.9422/video-encoding-decoding-21327059e063" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-1.png" alt="Video Encoding & Decoding" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Oct 25, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Video Encoding & Decoding</h3>
+
+                  <p class="blog-text">
+                    As a video engineer, the first thing I learned was video encoding & decoding by using ffmpeg library.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <!-- <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.362205094584!2d-76.67975718442706!3d39.12098847953688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7e48f8d82db37%3A0x1f845391ab748be7!2s8513%20Lexington%20Dr%2C%20Severn%2C%20MD%2021144%2C%20USA!5e0!3m2!1sen!2s!4v1666599103571!5m2!1sen!2s" 
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
